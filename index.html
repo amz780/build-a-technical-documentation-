@@ -9,7 +9,10 @@
     <style>
 *{
     box-sizing: border-box;
-}
+ }
+ html{
+     font-size: 62,5%;
+ }
 body{
     display: flex;
     flex-direction: column;
@@ -24,12 +27,55 @@ body{
 }
 .side-bar{
     flex-flow: column wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
     width: 30%;
+    border-right: 1px solid #686a6e;
 }
 .section-container{
     width: 70%;
 }
+.side-bar #nav-bar>header{
+    font-size: 2rem;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #686a6e;
+}
+.side-bar #nav-bar ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: flex-start;
+    gap: 1rem;
+    list-style-type: none;
+    font-size: 1.5rem;
+    text-align: left;
 
+}
+.side-bar li{
+    width: 100%;
+    border-bottom: 1px solid #686a6e;
+}
+.side-bar #nav-bar ul li a{
+    color:#686a6e;
+    text-decoration: none;
+}
+.main-section header{
+font: 1.5em sans-serif;
+}
+.main-section article{
+    padding-left: 2em;
+}
+code{
+    display: block;
+    background-color:#f7f7f7;
+    width: 100%;
+    min-height: 2em;
+    padding: 1em;
+    font-family: monospace;
+    margin-left: 2em;
+}
 
     </style>
 </head>
@@ -48,7 +94,7 @@ body{
             <li class="nav-link"><a href="#JavaScript_and_Java">JavaScript and Java</a></li>
             <li class="nav-link"><a href="#Hello_world">Hello World</a></li>
             <li class="nav-link"><a href="#Variables">Variables</a></li>
-            <li class="nav-link"><a href="#Declaring_variables">Declaring a variables/a></li>
+            <li class="nav-link"><a href="#Declaring_variables">Declaring a variables</a></li>
             <li class="nav-link"><a href="Global_variables">Global variables</a></li>
             <li class="nav-link"><a href="#Constants">Constants</a></li>
             <li class="nav-link"><a href="#Data_types">Data types</a></li>
